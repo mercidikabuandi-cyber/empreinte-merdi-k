@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Empreinte Merdi K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🛒 Empreinte Merdi K</h1>
+
+<!-- 🔐 LOGIN ADMIN -->
+<div id="loginBox" style="padding:20px; background:#eee; text-align:center;">
+    <h2>🔐 Accès Admin</h2>
+
+    <input type="password" id="password" placeholder="Mot de passe admin">
+    <button id="loginBtn">Se connecter</button>
+
+    <p id="error" style="color:red;"></p>
+</div>
+
+<!-- 🛠 PANEL ADMIN (caché au début) -->
+<div id="adminPanel" style="display:none;">
+
+    <h2>🛠 Ajouter un produit (Admin)</h2>
+
+    <input type="text" id="nomProduit" placeholder="Nom produit">
+    <input type="number" id="prixProduit" placeholder="Prix">
+    <input type="text" id="imageProduit" placeholder="URL image">
+
+    <button id="ajouterProduit">➕ Ajouter</button>
+
+    <hr>
+</div>
+
+<!-- 🔍 Recherche -->
+<input type="text" id="recherche" placeholder="Rechercher un produit...">
+
+<!-- 🛍 Produits -->
+<div id="produits"></div>
+
+<!-- 🛒 Panier -->
+<h2>🛒 Mon panier</h2>
+<ul id="panier"></ul>
+
+<!-- 💰 Total -->
+<h3 id="total">Total : 0$</h3>
+
+<!-- 🧾 Boutons -->
+<button id="commander">🧾 Commander</button>
+<button id="payer">💳 Payer maintenant</button>
+
+<!-- 📦 Zone commande / paiement -->
+<div id="commande" style="display:none; background:white; padding:15px; margin-top:20px;"></div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
